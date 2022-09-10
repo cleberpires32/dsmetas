@@ -1,0 +1,5 @@
+package com.desuperior.dsmeta.repository;
+
+public interface SalesRepository {
+
+}
