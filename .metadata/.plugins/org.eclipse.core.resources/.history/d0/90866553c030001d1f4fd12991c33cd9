@@ -1,0 +1,5 @@
+package com.desuperior.dsmeta.config;
+
+public class SecurityConfig {
+
+}
