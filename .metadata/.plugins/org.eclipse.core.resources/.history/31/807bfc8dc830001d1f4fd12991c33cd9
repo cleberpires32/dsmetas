@@ -1,0 +1,23 @@
+package com.desuperior.dsmeta.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
+
+import com.desuperior.dsmeta.entity.Sale;
+import com.desuperior.dsmeta.repository.SalesRepository;
+
+@Service
+public class SaleService {
+
+	@Autowired
+	private SalesRepository salesRepository;
+	
+	public Page<Sale> findSales(Pageable page) {
+		Page<Sale> list = salesRepository.findAll(page);
+		return list;
+	}
+}
