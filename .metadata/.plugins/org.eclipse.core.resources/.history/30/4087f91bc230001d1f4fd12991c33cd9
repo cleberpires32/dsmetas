@@ -1,0 +1,5 @@
+package com.desuperior.dsmeta.entity;
+
+public class Sale {
+
+}
